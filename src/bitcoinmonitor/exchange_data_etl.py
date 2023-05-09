@@ -58,7 +58,7 @@ def _get_exchange_insert_query() -> str:
     );
     '''
 
-
+# Here get warehoouse cre get all creditial from sde_config file and enters in db connection format as described by that class and create warehouse connection
 def run() -> None:
     data = get_exchange_data()
     for d in data:

@@ -110,7 +110,7 @@ sudo chmod 666 /var/run/docker.sock
 sudo apt install make
 
 echo 'Clone git repo to EC2'
-cd /home/ubuntu && git clone https://github.com/josephmachado/bitcoinMonitor.git
+cd /home/ubuntu && git clone https://github.com/Yogendra-sodha/bitcoin_tracker_pipeline.git
 
 echo 'CD to bitcoinMonitor directory'
 cd bitcoinMonitor
@@ -130,7 +130,7 @@ EOF
 # EC2 budget constraint
 resource "aws_budgets_budget" "ec2" {
   name              = "budget-ec2-monthly"
-  budget_type       = "COST"
+  budget_type       = "COST"./
   limit_amount      = "5"
   limit_unit        = "USD"
   time_period_end   = "2087-06-15_00:00"
