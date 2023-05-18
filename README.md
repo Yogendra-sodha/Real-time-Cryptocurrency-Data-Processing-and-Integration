@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # bitcoin_tracker_pipeline
 👋 Hi there! I'm a data engineer working on a project that involves building a data pipeline to extract data from various sources, transform it, and load it into a data warehouse.
 =======
@@ -71,4 +70,3 @@ After you are done, make sure to destroy your cloud infrastructure.
 make down # Stop docker containers on your computer
 make infra-down # type in yes after verifying the changes TF will make
 ```
->>>>>>> master
