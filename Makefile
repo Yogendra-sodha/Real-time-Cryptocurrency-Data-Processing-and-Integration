@@ -54,10 +54,10 @@ db-migration:
 	@read -p "Enter migration name:" migration_name; docker exec pipelinerunner yoyo new ./migrations -m "$$migration_name"
 
 warehouse-migration:
-	docker exec pipelinerunner yoyo develop --no-config-file --database postgres://sdeuser:sdepassword1234@warehouse:5432/finance ./migrations
+	docker exec pipelinerunner yoyo develop --no-config-file --database postgres://postgres:1234@warehouse:5432/postgres ./migrations
 
 warehouse-rollback:
-	docker exec pipelinerunner yoyo rollback --no-config-file --database postgres://sdeuser:sdepassword1234@warehouse:5432/finance ./migrations
+	docker exec pipelinerunner yoyo rollback --no-config-file --database postgres://postgres:1234@localhost:5432/postgres ./migrations
 
 ####################################################################################################################
 # Port forwarding to local machine

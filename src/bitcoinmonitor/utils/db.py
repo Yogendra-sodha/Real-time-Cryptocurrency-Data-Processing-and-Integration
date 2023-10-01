@@ -12,7 +12,6 @@ class DBConnection:
     host: str
     port: int = 5432
 
-
 class WarehouseConnection:
     def __init__(self, db_conn: DBConnection):
         self.conn_url = (

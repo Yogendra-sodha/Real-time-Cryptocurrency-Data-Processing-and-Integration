@@ -1,3 +1,4 @@
+MAILTO=yuvisodha@gmail.com
 SHELL=/bin/bash
 HOME=/
-*/5 * * * * WAREHOUSE_USER=postgres WAREHOUSE_PASSWORD=1234 WAREHOUSE_DB=postgres WAREHOUSE_HOST=localhost WAREHOUSE_PORT=5432 PYTHONPATH=/code/src /usr/local/bin/python /code/src/bitcoinmonitor/exchange_data_etl.py --db_user $WAREHOUSE_USER --db_password $WAREHOUSE_PASSWORD --db_name $WAREHOUSE_DB --db_host $WAREHOUSE_HOST --db_port $WAREHOUSE_PORT
+*/5 * * * * WAREHOUSE_USER=postgres WAREHOUSE_PASSWORD=1234 WAREHOUSE_DB=postgres WAREHOUSE_HOST=warehouse WAREHOUSE_PORT=5432 PYTHONPATH=/code/src /usr/local/bin/python /code/src/bitcoinmonitor/exchange_data_etl.py --db_user $WAREHOUSE_USER --db_password $WAREHOUSE_PASSWORD --db_name $WAREHOUSE_DB --db_host $WAREHOUSE_HOST --db_port $WAREHOUSE_PORT
