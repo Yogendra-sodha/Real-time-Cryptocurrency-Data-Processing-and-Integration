@@ -1,6 +1,7 @@
 # bitcoin_tracker_pipeline
+
 👋 Hi there! I'm a data engineer working on a project that involves building a data pipeline to extract data from various sources, transform it, and load it into a data warehouse.
-=======
+
 # Bitcoin Monitor
 
 This is an ETL pipeline to pull bitcoin exchange data from [CoinCap API](https://docs.coincap.io/) and load it into our data warehouse.
