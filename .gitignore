@@ -1,11 +1,10 @@
 .mypy*
-env*
 .pytest*
 
 .devcontainer*
 
 .vscode*
-.env
+env
 __pycache__*
 
 ###### TERRAFORM IGNORE
