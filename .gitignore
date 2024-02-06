@@ -5,7 +5,7 @@
 .devcontainer*
 
 .vscode*
-
+.env*
 __pycache__*
 
 ###### TERRAFORM IGNORE
